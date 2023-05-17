@@ -1,0 +1,596 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C72665662A11D91D007F52FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72665652A11D91D007F52FB /* AppDelegate.swift */; };
+		C72665682A11D91D007F52FB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72665672A11D91D007F52FB /* SceneDelegate.swift */; };
+		C726656D2A11D91D007F52FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C726656B2A11D91D007F52FB /* Main.storyboard */; };
+		C726656F2A11D91E007F52FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C726656E2A11D91E007F52FB /* Assets.xcassets */; };
+		C72665722A11D91E007F52FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C72665702A11D91E007F52FB /* LaunchScreen.storyboard */; };
+		C726657A2A11D9EA007F52FB /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72665792A11D9EA007F52FB /* BaseVC.swift */; };
+		C726657D2A12021F007F52FB /* BaseTabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C726657C2A12021F007F52FB /* BaseTabbarController.swift */; };
+		C726657F2A120262007F52FB /* DrinkVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C726657E2A120262007F52FB /* DrinkVC.swift */; };
+		C72665812A120296007F52FB /* ChartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72665802A120296007F52FB /* ChartVC.swift */; };
+		C72665832A1202A7007F52FB /* ReminderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72665822A1202A7007F52FB /* ReminderVC.swift */; };
+		C72665852A121802007F52FB /* LaunchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72665842A121802007F52FB /* LaunchVC.swift */; };
+		C732F4942A13589300549BE9 /* FileUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = C732F4912A13589300549BE9 /* FileUtil.swift */; };
+		C732F4952A13589300549BE9 /* AppUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = C732F4922A13589300549BE9 /* AppUtil.swift */; };
+		C732F4962A13589300549BE9 /* FirebaseUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = C732F4932A13589300549BE9 /* FirebaseUtil.swift */; };
+		C732F4982A1358BE00549BE9 /* Toolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C732F4972A1358BE00549BE9 /* Toolbar.swift */; };
+		C732F49A2A137D9800549BE9 /* HistoryRecordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C732F4992A137D9800549BE9 /* HistoryRecordVC.swift */; };
+		C732F49C2A13802900549BE9 /* ItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C732F49B2A13802900549BE9 /* ItemView.swift */; };
+		C732F49E2A13AAAB00549BE9 /* NotificationUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = C732F49D2A13AAAB00549BE9 /* NotificationUtil.swift */; };
+		C732F4A02A13AB0E00549BE9 /* NewReminderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C732F49F2A13AB0E00549BE9 /* NewReminderView.swift */; };
+		C732F4A42A146F3B00549BE9 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = C732F4A32A146F3B00549BE9 /* FirebaseAnalytics */; };
+		C732F4A62A146F3B00549BE9 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = C732F4A52A146F3B00549BE9 /* FirebaseCrashlytics */; };
+		C732F4A82A146F3B00549BE9 /* FirebaseRemoteConfig in Frameworks */ = {isa = PBXBuildFile; productRef = C732F4A72A146F3B00549BE9 /* FirebaseRemoteConfig */; };
+		C732F4AD2A14A35100549BE9 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = C732F4AC2A14A35100549BE9 /* IQKeyboardManagerSwift */; };
+		C732F4AF2A14B63A00549BE9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C732F4AE2A14B63A00549BE9 /* GoogleService-Info.plist */; };
+		C7E5BDD42A12203800C4FDBF /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = C7E5BDD32A12203800C4FDBF /* SnapKit */; };
+		C7E5BDD62A12204B00C4FDBF /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E5BDD52A12204B00C4FDBF /* HomeVC.swift */; };
+		C7E5BDD82A1221C800C4FDBF /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E5BDD72A1221C800C4FDBF /* BaseNavigationController.swift */; };
+		C7E5BDDB2A12509700C4FDBF /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E5BDDA2A12509700C4FDBF /* ProgressView.swift */; };
+		C7E5BDF22A125BCD00C4FDBF /* DrinkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E5BDF12A125BCD00C4FDBF /* DrinkModel.swift */; };
+		C7E5BDF42A125BE300C4FDBF /* ChartModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E5BDF32A125BE300C4FDBF /* ChartModel.swift */; };
+		C7E5BDF62A125BFC00C4FDBF /* RecordModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E5BDF52A125BFC00C4FDBF /* RecordModel.swift */; };
+		C7E5BDFD2A12600200C4FDBF /* DrinkSettingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E5BDFC2A12600200C4FDBF /* DrinkSettingVC.swift */; };
+		C7E5BDFF2A1260E700C4FDBF /* DrinkRecordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E5BDFE2A1260E700C4FDBF /* DrinkRecordVC.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C72665622A11D91D007F52FB /* TimelyDrink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimelyDrink.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C72665652A11D91D007F52FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C72665672A11D91D007F52FB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		C726656C2A11D91D007F52FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C726656E2A11D91E007F52FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C72665712A11D91E007F52FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C72665732A11D91E007F52FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C72665792A11D9EA007F52FB /* BaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
+		C726657C2A12021F007F52FB /* BaseTabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabbarController.swift; sourceTree = "<group>"; };
+		C726657E2A120262007F52FB /* DrinkVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkVC.swift; sourceTree = "<group>"; };
+		C72665802A120296007F52FB /* ChartVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartVC.swift; sourceTree = "<group>"; };
+		C72665822A1202A7007F52FB /* ReminderVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderVC.swift; sourceTree = "<group>"; };
+		C72665842A121802007F52FB /* LaunchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchVC.swift; sourceTree = "<group>"; };
+		C732F4912A13589300549BE9 /* FileUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileUtil.swift; sourceTree = "<group>"; };
+		C732F4922A13589300549BE9 /* AppUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppUtil.swift; sourceTree = "<group>"; };
+		C732F4932A13589300549BE9 /* FirebaseUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseUtil.swift; sourceTree = "<group>"; };
+		C732F4972A1358BE00549BE9 /* Toolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toolbar.swift; sourceTree = "<group>"; };
+		C732F4992A137D9800549BE9 /* HistoryRecordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryRecordVC.swift; sourceTree = "<group>"; };
+		C732F49B2A13802900549BE9 /* ItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemView.swift; sourceTree = "<group>"; };
+		C732F49D2A13AAAB00549BE9 /* NotificationUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationUtil.swift; sourceTree = "<group>"; };
+		C732F49F2A13AB0E00549BE9 /* NewReminderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewReminderView.swift; sourceTree = "<group>"; };
+		C732F4A12A13ACBA00549BE9 /* TimelyDrink.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TimelyDrink.entitlements; sourceTree = "<group>"; };
+		C732F4AE2A14B63A00549BE9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C7E5BDD52A12204B00C4FDBF /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		C7E5BDD72A1221C800C4FDBF /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
+		C7E5BDDA2A12509700C4FDBF /* ProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
+		C7E5BDF12A125BCD00C4FDBF /* DrinkModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkModel.swift; sourceTree = "<group>"; };
+		C7E5BDF32A125BE300C4FDBF /* ChartModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartModel.swift; sourceTree = "<group>"; };
+		C7E5BDF52A125BFC00C4FDBF /* RecordModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordModel.swift; sourceTree = "<group>"; };
+		C7E5BDFC2A12600200C4FDBF /* DrinkSettingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkSettingVC.swift; sourceTree = "<group>"; };
+		C7E5BDFE2A1260E700C4FDBF /* DrinkRecordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkRecordVC.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C726655F2A11D91D007F52FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C732F4AD2A14A35100549BE9 /* IQKeyboardManagerSwift in Frameworks */,
+				C732F4A62A146F3B00549BE9 /* FirebaseCrashlytics in Frameworks */,
+				C732F4A42A146F3B00549BE9 /* FirebaseAnalytics in Frameworks */,
+				C7E5BDD42A12203800C4FDBF /* SnapKit in Frameworks */,
+				C732F4A82A146F3B00549BE9 /* FirebaseRemoteConfig in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C72665592A11D91D007F52FB = {
+			isa = PBXGroup;
+			children = (
+				C72665642A11D91D007F52FB /* TimelyDrink */,
+				C72665632A11D91D007F52FB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C72665632A11D91D007F52FB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C72665622A11D91D007F52FB /* TimelyDrink.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C72665642A11D91D007F52FB /* TimelyDrink */ = {
+			isa = PBXGroup;
+			children = (
+				C732F4A12A13ACBA00549BE9 /* TimelyDrink.entitlements */,
+				C732F4902A13589300549BE9 /* Data */,
+				C7E5BDF02A125BC500C4FDBF /* Model */,
+				C7E5BDD92A12508400C4FDBF /* View */,
+				C726657B2A11DBF7007F52FB /* ViewController */,
+				C72665652A11D91D007F52FB /* AppDelegate.swift */,
+				C72665672A11D91D007F52FB /* SceneDelegate.swift */,
+				C726656B2A11D91D007F52FB /* Main.storyboard */,
+				C726656E2A11D91E007F52FB /* Assets.xcassets */,
+				C732F4AE2A14B63A00549BE9 /* GoogleService-Info.plist */,
+				C72665702A11D91E007F52FB /* LaunchScreen.storyboard */,
+				C72665732A11D91E007F52FB /* Info.plist */,
+			);
+			path = TimelyDrink;
+			sourceTree = "<group>";
+		};
+		C726657B2A11DBF7007F52FB /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C7E5BDF92A125CF300C4FDBF /* Base */,
+				C7E5BDFB2A125D0300C4FDBF /* Modual */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		C732F4902A13589300549BE9 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				C732F4912A13589300549BE9 /* FileUtil.swift */,
+				C732F4922A13589300549BE9 /* AppUtil.swift */,
+				C732F4932A13589300549BE9 /* FirebaseUtil.swift */,
+				C732F49D2A13AAAB00549BE9 /* NotificationUtil.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		C7E5BDD92A12508400C4FDBF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C7E5BDDA2A12509700C4FDBF /* ProgressView.swift */,
+				C732F4972A1358BE00549BE9 /* Toolbar.swift */,
+				C732F49B2A13802900549BE9 /* ItemView.swift */,
+				C732F49F2A13AB0E00549BE9 /* NewReminderView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C7E5BDF02A125BC500C4FDBF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C7E5BDF12A125BCD00C4FDBF /* DrinkModel.swift */,
+				C7E5BDF32A125BE300C4FDBF /* ChartModel.swift */,
+				C7E5BDF52A125BFC00C4FDBF /* RecordModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C7E5BDF92A125CF300C4FDBF /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				C72665792A11D9EA007F52FB /* BaseVC.swift */,
+				C726657C2A12021F007F52FB /* BaseTabbarController.swift */,
+				C7E5BDD72A1221C800C4FDBF /* BaseNavigationController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		C7E5BDFB2A125D0300C4FDBF /* Modual */ = {
+			isa = PBXGroup;
+			children = (
+				C72665842A121802007F52FB /* LaunchVC.swift */,
+				C7E5BDD52A12204B00C4FDBF /* HomeVC.swift */,
+				C726657E2A120262007F52FB /* DrinkVC.swift */,
+				C7E5BDFC2A12600200C4FDBF /* DrinkSettingVC.swift */,
+				C7E5BDFE2A1260E700C4FDBF /* DrinkRecordVC.swift */,
+				C72665802A120296007F52FB /* ChartVC.swift */,
+				C732F4992A137D9800549BE9 /* HistoryRecordVC.swift */,
+				C72665822A1202A7007F52FB /* ReminderVC.swift */,
+			);
+			path = Modual;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C72665612A11D91D007F52FB /* TimelyDrink */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C72665762A11D91E007F52FB /* Build configuration list for PBXNativeTarget "TimelyDrink" */;
+			buildPhases = (
+				C726655E2A11D91D007F52FB /* Sources */,
+				C726655F2A11D91D007F52FB /* Frameworks */,
+				C72665602A11D91D007F52FB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TimelyDrink;
+			packageProductDependencies = (
+				C7E5BDD32A12203800C4FDBF /* SnapKit */,
+				C732F4A32A146F3B00549BE9 /* FirebaseAnalytics */,
+				C732F4A52A146F3B00549BE9 /* FirebaseCrashlytics */,
+				C732F4A72A146F3B00549BE9 /* FirebaseRemoteConfig */,
+				C732F4AC2A14A35100549BE9 /* IQKeyboardManagerSwift */,
+			);
+			productName = TimelyDrink;
+			productReference = C72665622A11D91D007F52FB /* TimelyDrink.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C726655A2A11D91D007F52FB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					C72665612A11D91D007F52FB = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = C726655D2A11D91D007F52FB /* Build configuration list for PBXProject "TimelyDrink" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C72665592A11D91D007F52FB;
+			packageReferences = (
+				C7E5BDD22A12203800C4FDBF /* XCRemoteSwiftPackageReference "SnapKit" */,
+				C732F4A22A146F3B00549BE9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				C732F4AB2A14A35100549BE9 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+			);
+			productRefGroup = C72665632A11D91D007F52FB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C72665612A11D91D007F52FB /* TimelyDrink */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C72665602A11D91D007F52FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C72665722A11D91E007F52FB /* LaunchScreen.storyboard in Resources */,
+				C732F4AF2A14B63A00549BE9 /* GoogleService-Info.plist in Resources */,
+				C726656F2A11D91E007F52FB /* Assets.xcassets in Resources */,
+				C726656D2A11D91D007F52FB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C726655E2A11D91D007F52FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7E5BDFF2A1260E700C4FDBF /* DrinkRecordVC.swift in Sources */,
+				C7E5BDF22A125BCD00C4FDBF /* DrinkModel.swift in Sources */,
+				C732F49E2A13AAAB00549BE9 /* NotificationUtil.swift in Sources */,
+				C732F4A02A13AB0E00549BE9 /* NewReminderView.swift in Sources */,
+				C726657D2A12021F007F52FB /* BaseTabbarController.swift in Sources */,
+				C7E5BDFD2A12600200C4FDBF /* DrinkSettingVC.swift in Sources */,
+				C72665662A11D91D007F52FB /* AppDelegate.swift in Sources */,
+				C732F49C2A13802900549BE9 /* ItemView.swift in Sources */,
+				C7E5BDF42A125BE300C4FDBF /* ChartModel.swift in Sources */,
+				C72665682A11D91D007F52FB /* SceneDelegate.swift in Sources */,
+				C732F4982A1358BE00549BE9 /* Toolbar.swift in Sources */,
+				C732F49A2A137D9800549BE9 /* HistoryRecordVC.swift in Sources */,
+				C732F4952A13589300549BE9 /* AppUtil.swift in Sources */,
+				C7E5BDD62A12204B00C4FDBF /* HomeVC.swift in Sources */,
+				C72665832A1202A7007F52FB /* ReminderVC.swift in Sources */,
+				C72665812A120296007F52FB /* ChartVC.swift in Sources */,
+				C732F4962A13589300549BE9 /* FirebaseUtil.swift in Sources */,
+				C72665852A121802007F52FB /* LaunchVC.swift in Sources */,
+				C726657F2A120262007F52FB /* DrinkVC.swift in Sources */,
+				C7E5BDF62A125BFC00C4FDBF /* RecordModel.swift in Sources */,
+				C7E5BDD82A1221C800C4FDBF /* BaseNavigationController.swift in Sources */,
+				C726657A2A11D9EA007F52FB /* BaseVC.swift in Sources */,
+				C7E5BDDB2A12509700C4FDBF /* ProgressView.swift in Sources */,
+				C732F4942A13589300549BE9 /* FileUtil.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C726656B2A11D91D007F52FB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C726656C2A11D91D007F52FB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C72665702A11D91E007F52FB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C72665712A11D91E007F52FB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C72665742A11D91E007F52FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C72665752A11D91E007F52FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C72665772A11D91E007F52FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TimelyDrink/TimelyDrink.entitlements;
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TimelyDrink/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Timely Drink Reminder ";
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "Please allow access to your activity tracking to provide personalized push services and reduce interference caused by irrelevant services.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.safe.timelyDrinkReminder.pdd;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		C72665782A11D91E007F52FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TimelyDrink/TimelyDrink.entitlements;
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TimelyDrink/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Timely Drink Reminder ";
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "Please allow access to your activity tracking to provide personalized push services and reduce interference caused by irrelevant services.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.safe.timelyDrinkReminder.pdd;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C726655D2A11D91D007F52FB /* Build configuration list for PBXProject "TimelyDrink" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C72665742A11D91E007F52FB /* Debug */,
+				C72665752A11D91E007F52FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C72665762A11D91E007F52FB /* Build configuration list for PBXNativeTarget "TimelyDrink" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C72665772A11D91E007F52FB /* Debug */,
+				C72665782A11D91E007F52FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C732F4A22A146F3B00549BE9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+		C732F4AB2A14A35100549BE9 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		C7E5BDD22A12203800C4FDBF /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C732F4A32A146F3B00549BE9 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C732F4A22A146F3B00549BE9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		C732F4A52A146F3B00549BE9 /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C732F4A22A146F3B00549BE9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
+		};
+		C732F4A72A146F3B00549BE9 /* FirebaseRemoteConfig */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C732F4A22A146F3B00549BE9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseRemoteConfig;
+		};
+		C732F4AC2A14A35100549BE9 /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C732F4AB2A14A35100549BE9 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
+		};
+		C7E5BDD32A12203800C4FDBF /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C7E5BDD22A12203800C4FDBF /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = C726655A2A11D91D007F52FB /* Project object */;
+}

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>1062311314598-t3km621cked3q2d50tchjbe7ogomrrak.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.1062311314598-t3km621cked3q2d50tchjbe7ogomrrak</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDp5rUyDo9Sy3CpNLg4YNGiIqA1EkhDCl4</string>
+	<key>GCM_SENDER_ID</key>
+	<string>1062311314598</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.safe.timelyDrinkReminder.pdd</string>
+	<key>PROJECT_ID</key>
+	<string>timely-drink-reminder</string>
+	<key>STORAGE_BUCKET</key>
+	<string>timely-drink-reminder.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:1062311314598:ios:f8eac1ed6d21afca2ae067</string>
+</dict>
+</plist>
